@@ -1,0 +1,47 @@
+@media (max-width: 960px) and (min-width: 671px) {
+  /* I want to change section 2 (About) */
+
+  .section-2 {
+    display: grid;
+    align-items: start;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: none;
+  }
+
+  .about-head-960px {
+    order: 1;
+    display: inline;
+  }
+
+  .large-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 30px 10px 30px;
+  }
+
+  .large-img {
+    order: 0;
+    margin: auto;
+    height: 150px;
+    width: auto;
+  }
+
+  .about-head {
+    display: none;
+  }
+
+  .text-container-about {
+    padding: 15px 30px 90px 30px;
+    grid-template-rows: 1fr 6fr;
+  }
+
+  .about-sub-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-text {
+    justify-content: center;
+  }
+}

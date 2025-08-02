@@ -1,0 +1,155 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nachiket Patil</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles670px.css" />
+    <link rel="stylesheet" href="styles960px.css" />
+  </head>
+  <body>
+    <div class="whole-body">
+      <header class="header-sticky">
+        <div class="header-content">
+          <div class="social-links" aria-label="Social media">
+            <a
+              href="https://github.com/nachiketpatil0105"
+              class="social-link"
+              aria-label="Github"
+              ><img
+                class="icon-social"
+                src="github-svgrepo-com (2).svg"
+                alt="Github"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/nachiket-patil-iitgn"
+              class="social-link"
+              aria-label="LinkedIn"
+              ><img
+                class="icon-social"
+                src="linkedin-linked-in-svgrepo-com.svg"
+                alt="LinkedIn"
+            /></a>
+            <a href="#" class="social-link" aria-label="Instagram"
+              ><img
+                class="icon-social"
+                src="instagram-svgrepo-com.svg"
+                alt="Instagram"
+            /></a>
+          </div>
+          <div class="right-top">
+            <a
+              href="#Contact"
+              class="contact-link"
+              aria-label="Get in touch via email"
+            >
+              <img
+                class="icon-social"
+                src="mail-alt-3-svgrepo-com.svg"
+                alt="Mail"
+              />
+              <span class="contact-text">Get In Touch</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="sections-container">
+        <section id="Home" class="section section-1">
+          <div class="profile-img-container">
+            <img
+              class="profile-img"
+              src="1728735912130.jpeg"
+              alt="My profile image"
+            />
+          </div>
+          <div class="text-container-home">
+            <div class="cse-text">Computer Science Engineer</div>
+            <div class="moving-text">ABCD</div>
+            <div class="navbar">
+              <a class="nav-items" href="#About">About</a>
+              <a class="nav-items" href="#">Experience</a>
+              <a class="nav-items" href="#">Skills</a>
+              <a class="nav-items" href="#">Projects</a>
+            </div>
+          </div>
+          <!-- Animated Circles Container -->
+          <div id="circles-container"></div>
+        </section>
+        <section class="section section-2" id="About">
+          <div class="large-img-container">
+            <img class="large-img" src="1728735912130.jpeg" alt="Large image" />
+            <div class="about-head-960px">ABOUT</div>
+          </div>
+          <div class="text-container-about">
+            <div class="about-head">ABOUT</div>
+            <div class="about-sub-head">Here is something!</div>
+            <div class="about-text">
+              I am Nachiket Patil. Computer Science undergrad at IIT Gandhinagar
+              (2024-2028). Passionate about machine learning and real-world
+              tech. Building my foundation through coursework and projects.
+            </div>
+          </div>
+        </section>
+        <!-- <section class="section section-3">Section 3</section>
+        <section class="section section-4">Section 4</section>
+        <section class="section section-5">Section 5</section> -->
+        <section class="section section-6" id="Contact">
+          <div class="contact-contact-text">CONTACT</div>
+          <div class="contact-info-text">
+            <!-- +91 9421XXXXXX <br />
+            example@exam.com <br />
+            Detroit, United States -->
+          </div>
+          <form class="contact-form" action="">
+            <input
+              class="contact-form-input"
+              type="text"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="contact-form-input"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              class="contact-form-input"
+              type="text"
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              class="contact-form-input"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button class="contact-form-button" type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+      <footer>
+        <div class="footer-sticky">
+          <a href="#Home" class="social-link" aria-label="Home">
+            <img
+              class="icon-social home-icon-social"
+              src="home-1-svgrepo-com.svg"
+              alt="Home"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // Animated circles logic
+      const container = document.getElementById('circles-container')
+      function createCircle() {
+        const div = document.createElement('div')
+        div.className = 'circles'
+        div.addEventListener('animationend', () => div.remove())
+        container.appendChild(div)
+      }
+      setInterval(createCircle, 1300)
+    </script>
+  </body>
+</html>
