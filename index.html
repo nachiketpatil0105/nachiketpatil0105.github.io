@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles670px.css" />
     <link rel="stylesheet" href="styles960px.css" />
@@ -69,7 +70,7 @@
           </div>
           <div class="text-container-home">
             <div class="cse-text">Computer Science Engineer</div>
-            <div class="moving-text">ABCD</div>
+            <div class="moving-text"><span id="typed-output"></span></div>
             <div class="navbar">
               <a class="nav-items" href="#About">About</a>
               <a class="nav-items" href="#">Experience</a>
@@ -98,12 +99,12 @@
         <!-- <section class="section section-3">Section 3</section>
         <section class="section section-4">Section 4</section>
         <section class="section section-5">Section 5</section> -->
-        <section class="section section-6" id="Contact">
+        <!-- <section class="section section-6" id="Contact">
           <div class="contact-contact-text">CONTACT</div>
           <div class="contact-info-text">
-            <!-- +91 9421XXXXXX <br />
+            +91 9421XXXXXX <br />
             example@exam.com <br />
-            Detroit, United States -->
+            Detroit, United States
           </div>
           <form class="contact-form" action="">
             <input
@@ -131,7 +132,7 @@
             ></textarea>
             <button class="contact-form-button" type="submit">Submit</button>
           </form>
-        </section>
+        </section> -->
       </div>
       <footer>
         <div class="footer-sticky">
@@ -155,6 +156,16 @@
         container.appendChild(div)
       }
       setInterval(createCircle, 1300)
+
+      // Moving text with Typed.js
+      document.addEventListener('DOMContentLoaded', function () {
+        var typed = new Typed('#typed-output', {
+          strings: ['I am Nachiket', 'I am a CSE Student', 'I love AI/ML'],
+          typeSpeed: 50,
+          backSpeed: 30,
+          loop: true,
+        })
+      })
     </script>
   </body>
 </html>
