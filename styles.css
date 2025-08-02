@@ -3,6 +3,11 @@
   --color-header: rgb(57, 62, 70);
   --color-accent: rgb(148, 137, 121);
   --color-light: rgb(223, 208, 184);
+  --font-base: clamp(15px, 1.5vw, 18px);
+  --font-heading: clamp(28px, 4vw, 50px);
+  --font-subheading: clamp(20px, 2.5vw, 32px);
+  --font-navbar: clamp(14px, 1.5vw, 20px);
+  --font-about: clamp(16px, 2vw, 24px);
 }
 
 html,
@@ -46,7 +51,7 @@ body {
 }
 
 .contact-text {
-  font-size: 18px;
+  font-size: var(--font-navbar);
   color: white;
   align-items: center;
   margin: auto 5px auto 5px;
@@ -125,18 +130,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: var(--font-subheading);
 }
 
 .moving-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 60px;
+  font-size: var(--font-heading);
 }
 
 .nav-items {
-  font-size: 18px;
+  font-size: var(--font-navbar);
   text-decoration: none;
   /* background: gold; */
   border-radius: 9999px;
@@ -190,18 +195,18 @@ body {
 .about-head {
   display: flex;
   align-items: center;
-  font-size: 50px;
+  font-size: var(--font-heading);
 }
 
 .about-sub-head {
   display: flex;
   align-items: center;
   padding: 5px 0px;
-  font-size: 40px;
+  font-size: var(--font-subheading);
 }
 
 .about-text {
-  font-size: 30px;
+  font-size: var(--font-about);
   text-align: justify;
 }
 
@@ -220,7 +225,7 @@ body {
 .contact-info-text {
   padding: 0px 30px;
   height: 100%;
-  font-size: 18px;
+  font-size: var(--font-base);
   display: flex;
   align-items: center;
   justify-content: center;

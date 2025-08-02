@@ -4,11 +4,11 @@
   }
 
   .moving-text {
-    font-size: clamp(24px, 8vw, 40px);
+    font-size: clamp(22px, 8vw, 38px);
   }
 
   .nav-items {
-    font-size: clamp(10px, 3vw, 14px);
+    font-size: clamp(12px, 3vw, 16px);
     margin: 0px 0px;
     padding: 8px 10px;
   }
@@ -25,7 +25,9 @@
 
   .about-head-960px {
     order: 0;
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-self: center;
     font-size: clamp(18px, 6vw, 28px);
   }
 
@@ -56,11 +58,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(14px, 5vw, 22px);
+    font-size: clamp(16px, 5vw, 24px);
   }
 
   .about-text {
     justify-content: center;
-    font-size: clamp(12px, 4vw, 18px);
+    font-size: clamp(14px, 4vw, 20px);
   }
 }
